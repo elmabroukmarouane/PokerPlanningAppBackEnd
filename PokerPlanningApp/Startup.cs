@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using PokerPlanningApp.Extensions.Add;
 using PokerPlanningApp.Extensions.Use;
+using Newtonsoft.Json;
+using PokerPlanningApp.RealTime.Hubs.Classe;
 
 namespace PokerPlanningApp
 {
@@ -31,7 +33,12 @@ namespace PokerPlanningApp
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers()
+                    .AddNewtonsoftJson(option => {
+                        option.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                        option.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+                        option.SerializerSettings.ContractResolver = new Newtonsoft.Json.Serialization.DefaultContractResolver();
+                    });;
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PokerPlanningApp", Version = "v1" });
@@ -41,6 +48,7 @@ namespace PokerPlanningApp
             services.AddAutoMapper(typeof(Startup));
             services.AddCORS(Configuration);
             services.AddSERVICES(Configuration, _currentEnvironment);
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,6 +73,7 @@ namespace PokerPlanningApp
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHub<RealTimeHub>("/realtimehub");
                 endpoints.MapControllers();
             });
         }
