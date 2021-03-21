@@ -4,6 +4,76 @@
     "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\PokerPlanningApp\\PokerPlanningApp.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\Business.csproj",
+        "projectName": "Business",
+        "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\Marouane VM W10PRO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marouane VM W10PRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\UnitOfWork.csproj": {
+                "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\UnitOfWork.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.11.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -158,8 +228,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Domain\\Domain.csproj"
+              "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Business\\Business.csproj"
               }
             }
           }
@@ -177,10 +247,6 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[8.1.1, )"
-            },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
-              "target": "Package",
-              "version": "[5.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -207,6 +273,62 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\UnitOfWork.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\UnitOfWork.csproj",
+        "projectName": "UnitOfWork",
+        "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\UnitOfWork.csproj",
+        "packagesPath": "C:\\Users\\Marouane VM W10PRO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\UnitOfWork\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Marouane VM W10PRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Marouane VM W10PRO\\Documents\\PokerPlanningApp\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
