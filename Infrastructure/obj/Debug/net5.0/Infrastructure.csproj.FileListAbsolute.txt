@@ -1,0 +1,15 @@
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.csprojAssemblyReference.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

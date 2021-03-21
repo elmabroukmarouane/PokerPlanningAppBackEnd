@@ -1,0 +1,15 @@
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\Domain.deps.json
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\Domain.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\ref\Domain.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\Domain.pdb
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.csprojAssemblyReference.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.AssemblyInfoInputs.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.AssemblyInfo.cs
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.csproj.CopyComplete
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\ref\Domain.dll
+C:\Users\Marouane VM W10PRO\Documents\PokerPlanningApp\Domain\obj\Debug\net5.0\Domain.pdb
