@@ -35,8 +35,16 @@ namespace PokerPlanningApp.Extensions.Add
 
             self.AddTransient<IGenericQueryService<Role>, GenericQueryService<Role>>();
             self.AddTransient<IGenericCommandService<Role>, GenericCommandService<Role>>();
+            self.AddTransient<IGenericQueryService<Group>, GenericQueryService<Group>>();
+            self.AddTransient<IGenericCommandService<Group>, GenericCommandService<Group>>();
+            self.AddTransient<IGenericQueryService<Person>, GenericQueryService<Person>>();
+            self.AddTransient<IGenericCommandService<Person>, GenericCommandService<Person>>();
             self.AddTransient<IGenericQueryService<User>, GenericQueryService<User>>();
             self.AddTransient<IGenericCommandService<User>, GenericCommandService<User>>();
+            self.AddTransient<IGenericQueryService<Duration>, GenericQueryService<Duration>>();
+            self.AddTransient<IGenericCommandService<Duration>, GenericCommandService<Duration>>();
+            self.AddTransient<IGenericQueryService<Issue>, GenericQueryService<Issue>>();
+            self.AddTransient<IGenericCommandService<Issue>, GenericCommandService<Issue>>();
 
             self.AddTransient<IAuthenticationService, AuthenticationService>();
 

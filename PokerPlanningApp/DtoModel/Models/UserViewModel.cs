@@ -9,8 +9,9 @@ namespace PokerPlanningApp.DtoModel.Models
 {
     public class UserViewModel : Entity
     {
-        public int roleid { get; set; }
         public string email { get; set; }
-        public virtual RoleViewModel role { get; set; }
+        public string password { get; set; }
+        public virtual Role role { get; set; }
+        public virtual Person person { get; set; }
     }
 }
