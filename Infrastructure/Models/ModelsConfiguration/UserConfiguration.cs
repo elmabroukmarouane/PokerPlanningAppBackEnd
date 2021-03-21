@@ -13,10 +13,10 @@ namespace Infrastructure.Models.ModelsConfiguration
         public void Configure(EntityTypeBuilder<User> builder)
         {
             builder.HasKey(u => u.id);
-            //builder.HasOne(u => u.customer)
-            //       .WithMany(c => c.users)
-            //       .HasForeignKey(u => u.customerid)
-            //       .OnDelete(DeleteBehavior.Cascade);
+            builder.HasOne(u => u.person)
+                  .WithMany(p => p.users)
+                  .HasForeignKey(u => u.personid)
+                  .OnDelete(DeleteBehavior.Cascade);
             builder.HasOne(u => u.role)
                    .WithMany(r => r.users)
                    .HasForeignKey(u => u.roleid)

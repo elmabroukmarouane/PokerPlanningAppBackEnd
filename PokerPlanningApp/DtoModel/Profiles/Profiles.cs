@@ -16,6 +16,14 @@ namespace PokerPlanningApp.DtoModel.Profiles
             CreateMap<RoleViewModel, Role>();
             CreateMap<User, UserViewModel>();
             CreateMap<UserViewModel, User>();
+            CreateMap<Person, PersonViewModel>();
+            CreateMap<PersonViewModel, Person>();
+            CreateMap<Duration, DurationViewModel>();
+            CreateMap<DurationViewModel, Duration>();
+            CreateMap<Group, GroupViewModel>();
+            CreateMap<GroupViewModel, Group>();
+            CreateMap<Issue, IssueViewModel>();
+            CreateMap<IssueViewModel, Issue>();
         }
     }
 }

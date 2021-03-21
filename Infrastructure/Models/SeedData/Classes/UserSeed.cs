@@ -14,6 +14,7 @@ namespace Infrastructure.Models.SeedData.Classes
             {
                 id = 1,
                 roleid = 1,
+                personid = 1,
                 email = "user1@mail.com",
                 password = CreateHashPassword("123456"),
                 createdat = DateTime.Now,
@@ -25,6 +26,7 @@ namespace Infrastructure.Models.SeedData.Classes
             {
                 id = 2,
                 roleid = 2,
+                personid = 2,
                 email = "user2@mail.com",
                 password = CreateHashPassword("123456"),
                 createdat = DateTime.Now,
@@ -36,6 +38,7 @@ namespace Infrastructure.Models.SeedData.Classes
             {
                 id = 3,
                 roleid = 3,
+                personid = 3,
                 email = "user3@mail.com",
                 password = CreateHashPassword("123456"),
                 createdat = DateTime.Now,
