@@ -65,9 +65,9 @@ namespace PokerPlanningApp
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
-            app.UseAuthentication();
             app.UseCORS(Configuration);
             app.UseJWT();
 

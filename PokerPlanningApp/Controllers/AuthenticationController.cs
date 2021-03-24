@@ -51,8 +51,8 @@ namespace PokerPlanningApp.Controllers
                     _configuration.GetSection("Jwt").GetSection("Audience").Value);
                 return Ok(new
                 {
-                    //Message = "Hi " + user.customer.firstname + " " + user.customer.lastname + " !",
-                    Message = "Hi " + user.email + " !",
+                    Message = "Hi " + user.person.firstname + " " + user.person.lastname + " !",
+                    // Message = "Hi " + user.email + " !",
                     User = _mapper.Map<UserViewModel>(user),
                     Token = token,
                 });
