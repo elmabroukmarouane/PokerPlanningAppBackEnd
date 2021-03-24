@@ -35,7 +35,7 @@ namespace Business.Services.Authentication.Classe
                 return null;
             var AttempingUser = await _genericQueryService.GetFirstOrDefaultTEntity(
                 predicate: u => u.email.Trim().ToLower().Equals(UserLogin.Email.Trim().ToLower()),
-                includes: "role");
+                includes: "role,person");
             if (AttempingUser == null)
             {
                 return null;

@@ -11,7 +11,7 @@ namespace PokerPlanningApp.DtoModel.Models
         public string firstname { get; set; }
         public string lastname { get; set; }
         public DateTime birthdate { get; set;}
-        public virtual Group group { get; set; }
-        public virtual ICollection<User> users { get; set; }
+        public virtual GroupViewModel group { get; set; }
+        public virtual ICollection<UserViewModel> users { get; set; }
     }
 }

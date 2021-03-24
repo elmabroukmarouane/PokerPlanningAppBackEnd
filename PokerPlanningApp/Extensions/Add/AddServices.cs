@@ -18,11 +18,11 @@ using Business.Services.SendEmails.Interface;
 using Business.Services.SendEmails.Classe;
 using Business.Services.SendEmails.Models.Classes;
 using MailKit.Net.Smtp;
-// using InterimHotelRT.Server.RealTime.Interfaces;
-// using InterimHotelRT.Server.RealTime.Classes;
-// using InterimHotelRT.Server.RealTime.Hubs.Classe;
-// using InterimHotelRT.Server.RealTime.Hubs.Interface;
-// using Microsoft.AspNetCore.SignalR;
+using PokerPlanningApp.RealTime.Interfaces;
+using PokerPlanningApp.RealTime.Classes;
+using PokerPlanningApp.RealTime.Hubs.Classe;
+using PokerPlanningApp.RealTime.Hubs.Interface;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Hosting;
 
 namespace PokerPlanningApp.Extensions.Add
@@ -51,7 +51,7 @@ namespace PokerPlanningApp.Extensions.Add
             self.AddTransient<ISendMailService, SendMailService>();
             self.AddTransient<ISmtpClient, SmtpClient>();
 
-            // self.AddTransient<IRealTimeHub, RealTimeHub>();
+            self.AddTransient<IRealTimeHub, RealTimeHub>();
 
             self.AddSingleton(configuration);
             self.AddSingleton(hostEnvironment);
