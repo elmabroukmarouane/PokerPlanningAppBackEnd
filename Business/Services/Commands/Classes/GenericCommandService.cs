@@ -29,7 +29,7 @@ namespace Business.Services.Commands.Classes
 
         public async Task<TEntity> InsertTEntity(TEntity TEntity)
         {
-            TEntity.createdat = DateTime.Now;
+            TEntity.createdate = DateTime.Now;
             await _unitOfWork.GetRepository<TEntity>().Add(TEntity);
             await _unitOfWork.Save();
             return TEntity;
@@ -39,7 +39,7 @@ namespace Business.Services.Commands.Classes
         {
             foreach (var TEntity in TEntitys)
             {
-                TEntity.createdat = DateTime.Now;
+                TEntity.createdate = DateTime.Now;
             }
             await _unitOfWork.GetRepository<TEntity>().Add(TEntitys);
             await _unitOfWork.Save();
@@ -51,7 +51,7 @@ namespace Business.Services.Commands.Classes
 
         public TEntity UpdateByStateTEntity(TEntity TEntity)
         {
-            TEntity.updatedat = DateTime.Now;
+            TEntity.updatedate = DateTime.Now;
             _unitOfWork.GetRepository<TEntity>().UpdateByState(TEntity);
             _unitOfWork.Save();
             return TEntity;
@@ -59,7 +59,7 @@ namespace Business.Services.Commands.Classes
 
         public TEntity UpdateTEntity(TEntity TEntity)
         {
-            TEntity.updatedat = DateTime.Now;
+            TEntity.updatedate = DateTime.Now;
             _unitOfWork.GetRepository<TEntity>().Update(TEntity);
             _unitOfWork.Save();
             return TEntity;
@@ -69,7 +69,7 @@ namespace Business.Services.Commands.Classes
         {
             foreach (var TEntity in TEntitys)
             {
-                TEntity.updatedat = DateTime.Now;
+                TEntity.updatedate = DateTime.Now;
             }
             _unitOfWork.GetRepository<TEntity>().Update(TEntitys);
             _unitOfWork.Save();

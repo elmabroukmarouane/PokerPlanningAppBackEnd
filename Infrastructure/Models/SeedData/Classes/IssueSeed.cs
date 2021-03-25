@@ -17,9 +17,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 url = "https://google.com/",
                 assignedto = "EL MABROUK Marouane",
                 weight = 4,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Issue()
@@ -30,9 +30,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 url = "https://google.com/",
                 assignedto = "JOHN Smith",
                 weight = 4,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Issue()
@@ -43,9 +43,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 url = "https://google.com/",
                 assignedto = "MILLER William",
                 weight = 4,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

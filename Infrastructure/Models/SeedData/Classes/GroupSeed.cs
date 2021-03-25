@@ -13,27 +13,27 @@ namespace Infrastructure.Models.SeedData.Classes
             {
                 id = 1,
                 groupname = "Group 1",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Group()
             {
                 id = 2,
                 groupname = "Group 2",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Group()
             {
                 id = 3,
                 groupname = "Group 3",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

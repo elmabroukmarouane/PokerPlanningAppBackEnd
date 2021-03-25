@@ -6,8 +6,8 @@ namespace Infrastructure.Models.Interfaces
 {
     public interface ICommonFields
     {
-        DateTime? createdat { get; set; }
-        DateTime? updatedat { get; set; }
+        DateTime? createdate { get; set; }
+        DateTime? updatedate { get; set; }
         string createdby { get; set; }
         string updatedby { get; set; }
     }

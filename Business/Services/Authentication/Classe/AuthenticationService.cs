@@ -12,6 +12,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using UnitOfWork.UnitOfWork.Interface;
+using Newtonsoft.Json;
 
 namespace Business.Services.Authentication.Classe
 {
@@ -56,6 +57,7 @@ namespace Business.Services.Authentication.Classe
                 new Claim(JwtRegisteredClaimNames.GivenName, user.email),
                 new Claim(JwtRegisteredClaimNames.Email, user.email),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+                // new Claim(JwtRegisteredClaimNames.Iss, JsonConvert.SerializeObject(user))
             };
             var key = new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(keyString));

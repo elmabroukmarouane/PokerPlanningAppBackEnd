@@ -16,9 +16,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 firstname = "Marouane",
                 lastname = "EL MABROUK",
                 birthdate = DateTime.Now,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Person()
@@ -28,9 +28,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 firstname = "Smith",
                 lastname = "JOHN",
                 birthdate = DateTime.Now,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },new Person()
             {
@@ -39,9 +39,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 firstname = "William",
                 lastname = "MILLER",
                 birthdate = DateTime.Now,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

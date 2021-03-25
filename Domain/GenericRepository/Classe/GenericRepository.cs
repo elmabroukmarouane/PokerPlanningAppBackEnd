@@ -142,7 +142,7 @@ namespace Domain.GenericRepository.Classe
 		{
 			foreach (var entity in entities)
 			{
-				entity.updatedat = DateTime.Now;
+				entity.updatedate = DateTime.Now;
 				_dbContext.Entry(entity).State = EntityState.Modified;
 				await _dbContext.SaveChangesAsync();
 			}

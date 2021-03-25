@@ -15,9 +15,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 role = Roles.SUPER_ADMIN,
                 title = "Super Administrator",
                 description = "Super Administrator Description",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Role()
@@ -26,9 +26,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 role = Roles.ADMIN,
                 title = "Administrator",
                 description = "Administrator Description",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new Role()
@@ -37,9 +37,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 role = Roles.USER,
                 title = "User",
                 description = "User Description",
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

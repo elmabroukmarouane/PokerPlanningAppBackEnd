@@ -9,6 +9,10 @@ using Infrastructure.Models.MapObjects;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
+using System.Net;
+using PokerPlanningApp.Extensions.Logging;
 
 namespace PokerPlanningApp.Controllers
 {
@@ -19,15 +23,21 @@ namespace PokerPlanningApp.Controllers
         private readonly IAuthenticationService _authenticationService;
         private readonly IConfiguration _configuration;
         private readonly IMapper _mapper;
+        protected readonly ILogger<AuthenticationController> _logger;
+        protected readonly IHostEnvironment _currentEnvironment;
 
         public AuthenticationController(
             IAuthenticationService authenticationService, 
             IConfiguration configuration,
-            IMapper mapper)
+            IMapper mapper,
+            ILogger<AuthenticationController> logger,
+            IHostEnvironment currentEnvironment)
         {
             _authenticationService = authenticationService;
             _configuration = configuration;
             _mapper = mapper;
+            _logger = logger;
+            _currentEnvironment = currentEnvironment;
         }
 
         [Route("Login")]
@@ -52,13 +62,13 @@ namespace PokerPlanningApp.Controllers
                 return Ok(new
                 {
                     Message = "Hi " + user.person.firstname + " " + user.person.lastname + " !",
-                    // Message = "Hi " + user.email + " !",
                     User = _mapper.Map<UserViewModel>(user),
                     Token = token,
                 });
             }
             catch (Exception ex)
             {
+                _logger.LoggingMessageError("PokerPlanningApp", (int)HttpStatusCode.InternalServerError, HttpStatusCode.InternalServerError.ToString(), HttpContext.Request.Method, ControllerContext.RouteData.Values["controller"].ToString(), ControllerContext.RouteData.Values["controller"].ToString() + " - Add", ex, _currentEnvironment.ContentRootPath);
                 return StatusCode(500, new
                 {
                     Message = "Authentication failed !",

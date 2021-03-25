@@ -13,9 +13,9 @@ namespace Infrastructure.Models.SeedData.Classes
             {
                 id = 1,
                 duration = 60,
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

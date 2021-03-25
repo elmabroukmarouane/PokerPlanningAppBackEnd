@@ -17,9 +17,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 personid = 1,
                 email = "user1@mail.com",
                 password = CreateHashPassword("123456"),
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new User()
@@ -29,9 +29,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 personid = 2,
                 email = "user2@mail.com",
                 password = CreateHashPassword("123456"),
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             },
             new User()
@@ -41,9 +41,9 @@ namespace Infrastructure.Models.SeedData.Classes
                 personid = 3,
                 email = "user3@mail.com",
                 password = CreateHashPassword("123456"),
-                createdat = DateTime.Now,
+                createdate = DateTime.Now,
                 createdby = "Seed Data",
-                updatedat = DateTime.Now,
+                updatedate = DateTime.Now,
                 updatedby = "Seed Data"
             }
         };

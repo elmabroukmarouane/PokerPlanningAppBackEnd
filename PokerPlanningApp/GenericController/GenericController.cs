@@ -104,8 +104,8 @@ namespace PokerPlanningApp.GenericController
                 list = await _genericQueryService.GetTEntitys(
                     predicate: q => q.createdby.Contains(filterTrimedLowered) ||
                     q.updatedby.Contains(filterTrimedLowered) ||
-                    q.createdat.ToString().Contains(filterTrimedLowered) ||
-                    q.updatedat.ToString().Contains(filterTrimedLowered),
+                    q.createdate.ToString().Contains(filterTrimedLowered) ||
+                    q.updatedate.ToString().Contains(filterTrimedLowered),
                     orderBy: q => q.OrderByDescending(c => c.id),
                     disableTracking: filter.disableTracking, take: filter.take, offset: filter.offset, includes: filter.includes);
             }
@@ -153,8 +153,8 @@ namespace PokerPlanningApp.GenericController
                 row = await _genericQueryService.GetFirstOrDefaultTEntity(
                     predicate: q => q.createdby.Contains(filterTrimedLowered) ||
                     q.updatedby.Contains(filterTrimedLowered) ||
-                    q.createdat.ToString().Contains(filterTrimedLowered) ||
-                    q.updatedat.ToString().Contains(filterTrimedLowered),
+                    q.createdate.ToString().Contains(filterTrimedLowered) ||
+                    q.updatedate.ToString().Contains(filterTrimedLowered),
                     disableTracking: filter.disableTracking, includes: filter.includes);
             }
             if (row == null)
