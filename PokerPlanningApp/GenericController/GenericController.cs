@@ -18,6 +18,9 @@ using Microsoft.Extensions.Hosting;
 
 namespace PokerPlanningApp.GenericController
 {
+    /// <summary>
+    /// This is the generic Controller for all the controllers
+    /// </summary>
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
